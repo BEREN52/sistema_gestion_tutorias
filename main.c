@@ -11,7 +11,9 @@ int main() {
 	
 	int opcionPrincipal = 0;
 	
+
 	do {
+		system("cls");
 		printf("\n  SISTEMA DE GESTION DE TUTORIAS  \n");
 		printf("1. Gestionar Estudiantes\n");
 		printf("2. Gestionar Docentes\n");
@@ -23,6 +25,7 @@ int main() {
 		if (scanf("%d", &opcionPrincipal) != 1) {
 			printf("Por favor, ingrese un numero valido.\n");
 			while (getchar() != '\n'); 
+			system ("pause");
 			continue;
 		}
 		
@@ -30,7 +33,8 @@ int main() {
 			
 		case 1: {
 			int opEstudiantes = 0;
-			do {
+			do { 
+				system("cls");
 				printf("\n GESTION DE ESTUDIANTES \n");
 				printf("1. Registrar un nuevo estudiante\n");
 				printf("2. Listar todos los estudiantes\n");
@@ -45,8 +49,13 @@ int main() {
 				switch(opEstudiantes) {
 				case 1: registrarEstudiante(); break;
 				case 2: listarEstudiantes(); break;
-				case 3: printf("\nRegresando...\n"); break;
+				case 3: printf("\nRegresando\n"); break;
 				default: printf("\nOpcion invalida.\n");
+				}
+				
+				if(opEstudiantes != 3){
+					printf("\n");
+					system("pause");
 				}
 			} while(opEstudiantes != 3);
 			break;
@@ -55,6 +64,7 @@ int main() {
 		case 2: {
 			int opDocentes = 0;
 			do {
+				system ("cls");
 				printf("\n GESTION DE DOCENTES \n");
 				printf("1. Registrar un nuevo docente\n");
 				printf("2. Listar todos los docentes\n");
@@ -72,6 +82,12 @@ int main() {
 				case 3: printf("\nRegresando\n"); break;
 				default: printf("\nOpcion invalida.\n");
 				}
+				
+				if(opDocentes != 3){
+				printf("\n");
+				system ("pause");
+				}
+
 			} while(opDocentes != 3);
 			break;
 		}
@@ -79,6 +95,7 @@ int main() {
 		case 3: {
 			int opTutorias = 0;
 			do {
+				system ("cls");
 				printf("\n GESTION DE TUTORIAS \n");
 				printf("1. Asignar (Agendar) Tutoria\n");
 				printf("2. Cancelar Tutoria\n");
@@ -101,8 +118,13 @@ int main() {
 				case 4: listarTutoriasActivas(); break;
 				case 5: consultarTutoriasPorEstudiante(); break;
 				case 6: consultarTutoriasPorDocente(); break;
-				case 7: printf("\nRegresando...\n"); break;
+				case 7: printf("\nRegresando\n"); break;
 				default: printf("\nOpcion invalida.\n");
+				}
+				
+				if(opTutorias != 7){
+					printf("\n");
+					system ("pause");
 				}
 			} while(opTutorias != 7);
 			break;
@@ -111,6 +133,7 @@ int main() {
 		case 4: {
 			int opReportes = 0;
 			do {
+				system ("cls");
 				printf("\n REPORTES Y ESTADISTICAS \n");
 				printf("1. Reporte de Tutorias por Docente\n");
 				printf("2. Reporte: Estudiantes con mas tutorias\n");
@@ -133,6 +156,12 @@ int main() {
 				case 5: generarReporteCanceladasReprogramadas(); break;
 				case 6: printf("\nRegresando\n"); break;
 				default: printf("\nOpcion invalida.\n");
+				}
+				
+				if(opReportes != 6){
+					printf("\n");
+					system ("pause");
+					
 				}
 			} while(opReportes != 6);
 			break;
