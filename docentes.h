@@ -8,6 +8,10 @@ typedef struct {
 	char horarioDisponible[100];
 } Docente;
 
+extern Docente listaDocentes[]; //para compartir las variables o funciones
+extern int totalDocentes;
+void cargarDocentes();
+void guardarDocentes();
 void registrarDocente();
 void listarDocentes();
 int buscarDocentePorCodigo(const char* codigoIngresado, Docente* docenteEncontrado);
