@@ -31,7 +31,7 @@ El código fuente está modularizado para aplicar las mejores prácticas de inge
 
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone [https://github.com/tu-usuario/nombre-del-repo.git](https://github.com/tu-usuario/nombre-del-repo.git)
+   git clone https://github.com/BEREN52/sistema_gestion_tutorias.git
 2. Abre la carpeta del proyecto en Zinjai o cualquier IDE compatible con C.
 3. Asegúrate de que todos los archivos .c y .h estén en el mismo directorio.
 4. Compila y ejecuta el archivo main.c.
