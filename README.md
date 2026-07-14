@@ -1,6 +1,6 @@
 # Sistema de Gestión de Tutorías Académicas
 
-Este es un proyecto desarrollado en **C estándar** para la asignatura de Fundamentos de Programación en la **Escuela Politécnica Nacional (EPN)**. El sistema permite gestionar el agendamiento, control y seguimiento de tutorías académicas mediante una interfaz de consola interactiva.
+Este es un proyecto desarrollado en **C estándar** para la asignatura de Programación. El sistema permite gestionar el agendamiento, control y seguimiento de tutorías académicas mediante una interfaz de consola interactiva.
 
 ## Características Principales
 
